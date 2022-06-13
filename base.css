@@ -1,0 +1,1487 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Normalizando */
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+fieldset,
+img {
+    border: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+    font-style: normal;
+    font-weight: normal;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+caption,
+th {
+    text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+q:before,
+q:after {
+    content: '';
+}
+
+abbr,
+acronym {
+    border: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+}
+
+/* Base   */
+
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    color: #000;
+    background: #FFF;
+    min-width: 300px;
+}
+
+a,
+a:hover,
+a:visited,
+a:link {
+    display: block;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+
+.clear {
+    clear: both;
+}
+
+.bx-viewport {
+    padding: 0;
+    height: 160px;
+}
+
+.slicknav_menu {
+    display: none;
+}
+
+.transition {
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+}
+
+.font1 {
+    font-family: 'HPRobotoRegular', Arial, sans-serif;
+}
+
+.font2 {
+    font-family: 'HPRobotoBold', Arial, sans-serif;
+}
+
+.branco {
+    color: #FFF;
+}
+
+.ouro {
+    color: #F1AB2F;
+}
+
+.cinza {
+    color: #1D1D1D;
+}
+
+.tam14 {
+    font-size: 14px;
+}
+
+.tam16 {
+    font-size: 16px;
+}
+
+.tam20 {
+    font-size: 20px;
+}
+
+.tam25 {
+    font-size: 25px;
+}
+
+.tam30 {
+    font-size: 30px;
+}
+
+.tam35 {
+    font-size: 35px;
+}
+
+.tam40 {
+    font-size: 40px;
+}
+
+.tam45 {
+    font-size: 45px;
+}
+
+.tam50 {
+    font-size: 50px;
+}
+
+.mai {
+    text-transform: uppercase;
+}
+
+
+.sonar-wrapper {
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    z-index: 0;
+    overflow: hidden;
+    padding: 100px 10px 10px 100px;
+    z-index: 99999;
+}
+
+/* The circle */
+.sonar-emitter {
+    position: relative;
+    margin: 0 auto;
+    width: 85px;
+    height: 85px;
+    border-radius: 9999px;
+    background: url(/public/img/layout/default/whatsfixed.png) center center no-repeat;
+    background-size: 70% 70%;
+}
+
+/* the 'wave', same shape and size as its parent */
+.sonar-wave {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 9999px;
+    background-color: #56d062;
+    opacity: 0;
+    z-index: -1;
+    pointer-events: none;
+}
+
+/*
+  Animate!
+  NOTE: add browser prefixes where needed.
+*/
+.sonar-wave {
+    animation: sonarWave 3s linear infinite;
+}
+
+@keyframes sonarWave {
+    from {
+        opacity: 0.4;
+    }
+
+    to {
+        transform: scale(3);
+        opacity: 0;
+    }
+}
+
+
+#box01 {
+    position: relative;
+    width: 100%;
+    height: 650px;
+    background: url('/public/img/layout/default/topo.png') center center no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+#box01.trab.jc {
+    background: url('/public/img/layout/default/jc.png') center center no-repeat;
+    background-size: cover;
+}
+
+#box01.trab.peri {
+    background: url('/public/img/layout/default/peri.png') center center no-repeat;
+    background-size: cover;
+}
+
+#box01.trab.ctps {
+    background: url('/public/img/layout/default/ctps.png') center center no-repeat;
+    background-size: cover;
+}
+
+#box01.trab.gravida {
+    background: url('/public/img/layout/default/gravida.png') center center no-repeat;
+    background-size: cover;
+}
+
+#box01.conn {
+    background: url('/public/img/layout/default/topo2.png') center center no-repeat;
+    background-size: cover;
+}
+
+#box01.fami {
+    background: url('/public/img/layout/default/topo3.png') center center no-repeat;
+    background-size: cover;
+}
+
+#box01.fami.divorcio {
+    background: url('/public/img/layout/default/topodivorcio.png') center center no-repeat;
+    background-size: cover;
+}
+
+#box01.fami.pensao {
+    background: url('/public/img/layout/default/topopensao.png') center center no-repeat;
+    background-size: cover;
+}
+
+#box01.fami.guarda {
+    background: url('/public/img/layout/default/guarda.png') center center no-repeat;
+    background-size: cover;
+}
+
+#box01.fami.uniao {
+    background: url('/public/img/layout/default/uniao.png') center center no-repeat;
+    background-size: cover;
+}
+
+#box01 a#logo {
+    display: inline-block;
+    width: 180px;
+    height: 130px;
+    background: url('/public/img/layout/default/logo.png') center center no-repeat;
+    background-size: cover;
+    margin: 40px 0 0 0;
+}
+
+#box01 h1 {
+    display: inline-block;
+    width: 580px;
+    height: 200px;
+    margin: 50px 0 0 0;
+}
+
+#box01.conn h1 {
+    display: inline-block;
+    width: 600px;
+    height: 250px;
+    margin: 50px 0 0 0;
+}
+
+#box01.pensao h1,
+#box01.guarda h1,
+#box01.ctps h1 {
+    width: 650px;
+}
+
+#box01.jc h1 {
+    width: 620px;
+    font-size: 40px !important;
+}
+
+#box01.peri h1 {
+    width: 680px;
+    font-size: 42px !important;
+}
+
+#box01 a#whats {
+    display: inline-block;
+    width: 350px;
+    height: 50px;
+    background: url('/public/img/layout/default/zap.png') left center no-repeat;
+    padding: 35px 0px 5px 50px;
+    margin: 25px 0 0 0;
+}
+
+#box01 a#whats:hover {
+    margin: 25px 0 0 0;
+}
+
+
+#box02 {
+    position: relative;
+    width: 100%;
+    padding: 90px 0;
+    background: #1D1D1D;
+    text-align: center;
+}
+
+#box02 #esq {
+    display: inline-block;
+    width: 45%;
+    vertical-align: top;
+    position: relative;
+}
+
+#box02 span {
+    display: inline-block;
+    text-align: left;
+    width: 80%;
+    vertical-align: top;
+}
+
+#box02 span.trab {
+    padding: 100px 0 0 0;
+}
+
+#box02 span.con2 {
+    padding: 60px 0 0 0;
+}
+
+#box02 span.tam16 {
+    padding: 30px 0 0 0;
+    line-height: 200%;
+}
+
+#box02 #dir {
+    display: inline-block;
+    width: 45%;
+    vertical-align: top;
+    position: relative;
+}
+
+#box02 #dir img {
+    display: inline-block;
+    width: 451px;
+    height: 424px;
+}
+
+#box03 {
+    position: relative;
+    width: 100%;
+    padding: 80px 0;
+    text-align: center;
+}
+
+#box03 #video {
+    display: inline-block;
+    width: 900px;
+    height: 480px;
+    background: #CCC;
+    margin: 0 0 40px 0;
+}
+
+#box03 a#insta {
+    display: inline-block;
+    width: 300px;
+    background: url('/public/img/layout/default/insta.png') left center no-repeat;
+    background-size: 50px;
+    text-align: left;
+    padding: 5px 0 5px 70px;
+}
+
+#box03 a#whats {
+    display: inline-block;
+    width: 300px;
+    background: url('/public/img/layout/default/whats.png') left center no-repeat;
+    background-size: 60px;
+    text-align: left;
+    padding: 5px 0 5px 70px;
+}
+
+#box04 {
+    position: relative;
+    width: 100%;
+    padding: 90px 0;
+    background: #1D1D1D;
+    text-align: center;
+}
+
+#box04 #esq {
+    display: inline-block;
+    width: 40%;
+    vertical-align: top;
+    position: relative;
+}
+
+#box04 #esq.nov {
+    width: 80%;
+}
+
+#box04 span {
+    display: inline-block;
+    text-align: left;
+    width: 85%;
+    vertical-align: top;
+}
+
+#box04 span.tam25 {
+    padding: 0 0 0 0;
+}
+
+#box04 span.tam16 {
+    padding: 30px 0 0 0;
+    line-height: 140%;
+}
+
+#box04 #esq ul {
+    display: inline-block;
+    width: 75%;
+    padding: 40px 0 0 0;
+}
+
+#box04 #esq ul li {
+    background: url('/public/img/layout/default/seta.png') left center no-repeat;
+    background-size: 15px;
+    color: #FFF;
+    text-align: left;
+    padding: 13px 0 13px 30px;
+    font-size: 18px;
+}
+
+#box04 #esq #cen {
+    display: inline-block;
+    width: 28%;
+    vertical-align: top;
+    position: relative;
+    padding: 40px 0 0 0;
+    margin: 0 10px;
+}
+
+#box04 #esq #cen .tt2 {
+    padding: 10px 0 0 0;
+}
+
+#box04 #esq #cen2 {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+    position: relative;
+    padding: 20px 0 0 0;
+    margin: 0 10px;
+}
+
+#box04 #esq #cen2 .tt2 {
+    padding: 10px 0 0 0;
+}
+
+#box04 #esq #cen3 {
+    display: inline-block;
+    width: 46%;
+    vertical-align: top;
+    position: relative;
+    padding: 20px 0 0 0;
+    margin: 0 0px;
+}
+
+#box04 #esq #cen3 .tt2 {
+    padding: 10px 0 0 0;
+}
+
+
+#box04 #esq #cen4 {
+    display: inline-block;
+    width: 46%;
+    vertical-align: top;
+    position: relative;
+    padding: 20px 0 0 0;
+    margin: 0 0px;
+}
+
+#box04 #esq #cen4 .tt2 {
+    padding: 10px 0 10px 0;
+}
+
+
+#box04 #esq #cen5 {
+    display: inline-block;
+    width: 46%;
+    vertical-align: top;
+    position: relative;
+    padding: 20px 0 0 0;
+    margin: 0 0px;
+}
+
+#box04 #esq #cen5 .tt2 {
+    padding: 10px 0 0 0;
+}
+
+#box04 #esq #msg {
+    display: inline-block;
+    width: 80%;
+    vertical-align: top;
+    position: relative;
+    margin: 60px 0 0 0;
+    padding: 20px 0 0 0;
+    border-top: 1px solid #333;
+}
+
+#box04 #esq a#whats {
+    display: inline-block;
+    width: 350px;
+    height: 50px;
+    background: url('/public/img/layout/default/zap.png') left center no-repeat;
+    padding: 35px 0px 5px 50px;
+    margin: 25px 0 0 0;
+}
+
+#box04 #esq a#whats:hover {
+    margin: 25px 0 0 0;
+}
+
+#box04 #dir {
+    display: inline-block;
+    width: 45%;
+    vertical-align: top;
+    position: relative;
+}
+
+#box04 #dir #slide {
+    display: inline-block;
+    width: 500px;
+    height: 730px;
+}
+
+#box05 {
+    position: relative;
+    width: 100%;
+    padding: 80px 0;
+    text-align: center;
+}
+
+#box05 #esq {
+    display: inline-block;
+    width: 45%;
+    vertical-align: top;
+    position: relative;
+}
+
+#box05 #esq #slide {
+    display: inline-block;
+    width: 500px;
+    height: 720px;
+}
+
+#box05 #dir {
+    display: inline-block;
+    width: 45%;
+    vertical-align: top;
+    position: relative;
+}
+
+#box05 span {
+    display: inline-block;
+    text-align: left;
+    width: 80%;
+    vertical-align: top;
+}
+
+#box05 span.tam50 {
+    padding: 100px 0 0 0;
+}
+
+#box05 span.tam20 {
+    padding: 30px 0 0 0;
+    line-height: 200%;
+}
+
+
+#box06 {
+    position: relative;
+    width: 100%;
+    padding: 90px 0;
+    background: #1D1D1D;
+    text-align: center;
+}
+
+#box06 #alinhar {
+    position: relative;
+    width: 900px;
+    margin: 0 auto;
+}
+
+#box06 ul {
+    display: relative;
+    padding: 60px 0;
+    margin: 0 auto;
+}
+
+#box06 ul li {
+    display: block;
+    float: left;
+    height: 350px;
+}
+
+#box06 ul li #tp {
+    display: inline-block;
+    width: 100%;
+    height: 120px;
+    padding: 0 0 20px 0;
+    text-align: left;
+}
+
+#box06 ul li #tp img {
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    vertical-align: top;
+    margin: 0 10px 0 0;
+}
+
+#box06 ul li #tp div {
+    display: inline-block;
+    width: 60%;
+}
+
+#box06 ul li #tp div span {
+    display: inline-block;
+    vertical-align: top;
+    padding: 30px 0 0 0;
+}
+
+#box06 ul li #sb {
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    line-height: 160%;
+}
+
+#mapas {
+    display: inline-block;
+    position: relative;
+    width: 49%;
+    height: 1100px;
+    vertical-align: top;
+    background: url('/public/img/layout/default/mp.png') center center no-repeat;
+    background-size: cover;
+}
+
+#mapas a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-indent: -9999px;
+}
+
+#rodape {
+    position: relative;
+    width: 100%;
+    background: #1D1D1D;
+    text-align: center;
+}
+
+#rodape #rp {
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+}
+
+#rodape #rp a#logo {
+    display: inline-block;
+    width: 200px;
+    height: 150px;
+    background: url('/public/img/layout/default/logo.png') center center no-repeat;
+    background-size: cover;
+    margin: 0 0 0 0;
+}
+
+#rodape #rp div {
+    display: inline-block;
+    padding: 30px 0;
+    width: 80%;
+    border-bottom: 1px solid #473920;
+}
+
+#rodape #rp div.rp {
+    padding: 30px 0 0 0;
+    border-bottom: none;
+}
+
+#rodape #rp div .tt {
+    display: inline-block;
+    width: 100%;
+    padding: 0 0 20px 0;
+}
+
+#rodape #rp div .tx {
+    display: inline-block;
+    width: 100%;
+    padding: 0 0 20px 0;
+}
+
+#rodape #rp div #insta {
+    display: inline-block;
+    width: auto;
+    padding: 10px 0 10px 50px;
+    background: url('/public/img/layout/default/icones/insta1.png') left center no-repeat;
+    background-size: 35px;
+}
+
+#rodape #rp div #whats {
+    display: inline-block;
+    width: auto;
+    padding: 10px 0 10px 50px;
+    background: url('/public/img/layout/default/icones/whats2.png') left center no-repeat;
+    background-size: 35px;
+}
+
+#rodape #rp div #mail {
+    display: inline-block;
+    padding: 10px 0;
+    ;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1466px) {}
+
+
+@media screen and (max-width: 1224px) {}
+
+@media screen and (max-width: 810px) {}
+
+@media screen and (max-width: 768px) {
+
+    body {
+        -webkit-text-size-adjust: 100%;
+        overflow-x: hidden;
+    }
+
+    .slicknav_menu {
+        display: block;
+    }
+
+    .tam14 {
+        font-size: 14px;
+    }
+
+    .tam16 {
+        font-size: 14px;
+    }
+
+    .tam20 {
+        font-size: 14px;
+    }
+
+    .tam25 {
+        font-size: 20px;
+    }
+
+    .tam30 {
+        font-size: 30px;
+    }
+
+    .tam35 {
+        font-size: 25px;
+    }
+
+    .tam40 {
+        font-size: 40px;
+    }
+
+    .tam45 {
+        font-size: 45px;
+    }
+
+    .tam50 {
+        font-size: 30px;
+    }
+
+    .mai {
+        text-transform: uppercase;
+    }
+
+    .sonar-wrapper {
+        position: fixed;
+        right: 0px;
+        bottom: 0px;
+        z-index: 0;
+        overflow: hidden;
+        padding: 50px 5px 5px 50px;
+        z-index: 99999;
+    }
+
+    /* The circle */
+    .sonar-emitter {
+        position: relative;
+        margin: 0 auto;
+        width: 55px;
+        height: 55px;
+        border-radius: 9999px;
+        background: url(/public/img/layout/default/whatsfixed.png) center center no-repeat;
+        background-size: 70% 70%;
+    }
+
+    /* the 'wave', same shape and size as its parent */
+    .sonar-wave {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 9999px;
+        background-color: #56d062;
+        opacity: 0;
+        z-index: -1;
+        pointer-events: none;
+    }
+
+    /*
+	  Animate!
+	  NOTE: add browser prefixes where needed.
+	*/
+    .sonar-wave {
+        animation: sonarWave 3s linear infinite;
+    }
+
+    @keyframes sonarWave {
+        from {
+            opacity: 0.4;
+        }
+
+        to {
+            transform: scale(3);
+            opacity: 0;
+        }
+    }
+
+    #box01 {
+        position: relative;
+        width: 100%;
+        height: 400px;
+        background: url('/public/img/layout/default/topo.png') center center no-repeat;
+        background-size: cover;
+        text-align: center;
+    }
+
+    #box01 a#logo {
+        display: inline-block;
+        width: 130px;
+        height: 100px;
+        background: url('/public/img/layout/default/logo.png') center center no-repeat;
+        background-size: cover;
+        margin: 30px 0 0 0;
+    }
+
+    #box01 h1 {
+        display: inline-block;
+        width: 80%;
+        height: 110px;
+        margin: 40px 0 0 0;
+        font-size: 25px !important;
+    }
+
+    #box01.pensao h1,
+    #box01.guarda h1,
+    #box01.ctps h1 {
+        width: 80%;
+    }
+
+    #box01.ctps h1 {
+        margin: 30px 0 0 0;
+        font-size: 20px !important;
+    }
+
+    #box01.jc h1 {
+        width: 80%;
+        margin: 30px 0 0 0;
+        font-size: 18px !important;
+    }
+
+    #box01.peri h1 {
+        width: 80%;
+        margin: 30px 0 0 0;
+        font-size: 20px !important;
+    }
+
+    #box01.conn h1 {
+        display: inline-block;
+        width: auto;
+        height: 250px;
+        margin: 50px 0 0 0;
+    }
+
+    #box01.pensao h1,
+    #box01.guarda h1,
+    #box01.ctps h1 {
+        width: auto;
+    }
+
+    #box01.jc h1 {
+        width: auto;
+        font-size: 20px !important;
+    }
+
+    #box01.peri h1 {
+        width: auto;
+        font-size: 20px !important;
+    }
+
+    #box01 a#whats {
+        display: inline-block;
+        width: 210px;
+        height: 30px;
+        background: url('/public/img/layout/default/zap.png') left center no-repeat;
+        background-size: 270px;
+        padding: 20px 25px 5px 45px;
+        margin: 5px 0 0 0;
+    }
+
+    #box01 a#whats.tam16 {
+        font-size: 11px;
+    }
+
+    #box01 a#whats:hover {
+        margin: 0px 0 0 0;
+    }
+
+
+    #box02 {
+        position: relative;
+        width: 100%;
+        padding: 30px 0;
+        background: #1D1D1D;
+        text-align: center;
+    }
+
+    #box02 #esq {
+        display: inline-block;
+        width: 100%;
+        vertical-align: top;
+        position: relative;
+    }
+
+    #box02 span {
+        display: inline-block;
+        text-align: left;
+        width: 90%;
+        vertical-align: top;
+    }
+
+    #box02 span.trab {
+        padding: 50px 0 0 0;
+    }
+
+    #box02 span.con2 {
+        padding: 60px 0 0 0;
+    }
+
+    #box02 span.tam40 {
+        font-size: 32px !important;
+    }
+
+    #box02 span.tam16 {
+        padding: 10px 0 0 0;
+        line-height: 160%;
+    }
+
+    #box02 #dir {
+        display: inline-block;
+        width: 100%;
+        vertical-align: top;
+        position: relative;
+        padding: 30px 0 0 0;
+    }
+
+    #box02 #dir img {
+        display: inline-block;
+        width: 321px;
+        height: 304px;
+    }
+
+    #box03 {
+        position: relative;
+        width: 100%;
+        padding: 40px 0;
+        text-align: center;
+    }
+
+    #box03 #video {
+        display: inline-block;
+        width: 300px;
+        height: 170px;
+        background: #CCC;
+        margin: 0 0 20px 0;
+    }
+
+    #box03 a#insta {
+        display: inline-block;
+        width: 250px;
+        background: url('/public/img/layout/default/insta.png') 20px center no-repeat;
+        background-size: 40px;
+        text-align: left;
+        padding: 5px 0 5px 80px;
+        margin: 0 0 20px 0;
+    }
+
+    #box03 a#whats {
+        display: inline-block;
+        width: 250px;
+        background: url('/public/img/layout/default/whats.png') 20px center no-repeat;
+        background-size: 45px;
+        text-align: left;
+        padding: 5px 0 5px 80px;
+    }
+
+    #box03 #ytp {
+        display: inline-block;
+        width: 300px;
+        height: 170px;
+        margin: 0 0 40px 0;
+    }
+
+    #box03 #ytp img {
+        display: inline-block;
+        width: 300px;
+        height: 170px;
+    }
+
+    #box04 {
+        position: relative;
+        width: 100%;
+        padding: 50px 0;
+        background: #1D1D1D;
+        text-align: center;
+    }
+
+    #box04 #esq {
+        display: inline-block;
+        width: 100%;
+        vertical-align: top;
+        position: relative;
+    }
+
+    #box04 #esq.nov {
+        width: 96%;
+    }
+
+    #box04 span {
+        display: inline-block;
+        text-align: left;
+        width: 85%;
+        vertical-align: top;
+    }
+
+    #box04 span.tam25 {
+        padding: 0 0 0 0;
+    }
+
+    #box04 span.tam40,
+    #box04 span.tam50,
+    #box04 span.tam30 {
+        font-size: 20px !important;
+    }
+
+    #box04 span.tam16 {
+        padding: 30px 0 0 0;
+        line-height: 140%;
+    }
+
+    #box04 span {
+        display: inline-block;
+        text-align: left;
+        width: 90%;
+        vertical-align: top;
+    }
+
+    #box04 .tam25 {
+        padding: 0 0 0 0;
+        font-size: 18px !important;
+    }
+
+    #box04 span.tam16 {
+        padding: 30px 0 0 0;
+        line-height: 160%;
+    }
+
+    #box04 #esq ul {
+        display: inline-block;
+        width: 90%;
+        padding: 10px 0 30px 0;
+    }
+
+    #box04 #esq ul li {
+        background: url('/public/img/layout/default/seta.png') 5px center no-repeat;
+        background-size: 13px;
+        color: #FFF;
+        text-align: left;
+        padding: 6px 0 6px 30px;
+        font-size: 14px;
+    }
+
+    #box04 #esq #cen {
+        display: inline-block;
+        width: 100%;
+        vertical-align: top;
+        position: relative;
+        padding: 40px 0 0 0;
+        margin: 0 0px;
+    }
+
+    #box04 #esq #cen .tt2 {
+        padding: 10px 0 0 0;
+    }
+
+    #box04 #esq #cen2 {
+        display: inline-block;
+        width: 100%;
+        vertical-align: top;
+        position: relative;
+        padding: 20px 0 0 0;
+        margin: 0 0px;
+    }
+
+    #box04 #esq #cen2 .tt2 {
+        padding: 10px 0 0 0;
+    }
+
+    #box04 #esq #cen3 {
+        display: inline-block;
+        width: 100%;
+        vertical-align: top;
+        position: relative;
+        padding: 20px 0 0 0;
+        margin: 0 0px;
+    }
+
+    #box04 #esq #cen3 .tt2 {
+        padding: 10px 0 0 0;
+    }
+
+
+
+    #box04 #esq #cen4 {
+        display: inline-block;
+        width: 100%;
+        vertical-align: top;
+        position: relative;
+        padding: 20px 0 0 0;
+        margin: 0 0px;
+    }
+
+    #box04 #esq #cen4 .tt2 {
+        padding: 10px 0 0 0;
+    }
+
+
+    #box04 #esq #cen5 {
+        display: inline-block;
+        width: 100%;
+        vertical-align: top;
+        position: relative;
+        padding: 20px 0 0 0;
+        margin: 0 0px;
+    }
+
+    #box04 #esq #cen5 .tt2 {
+        padding: 10px 0 0 0;
+    }
+
+    #box04 #esq #msg {
+        display: inline-block;
+        width: 80%;
+        vertical-align: top;
+        position: relative;
+        margin: 60px 0 0 0;
+        padding: 20px 0 20px 0;
+        border-top: 1px solid #333;
+        font-size: 22px !important;
+    }
+
+    #box04 #esq a#whats {
+        display: inline-block;
+        width: 210px;
+        height: 30px;
+        background: url('/public/img/layout/default/zap.png') left center no-repeat;
+        background-size: 270px;
+        padding: 20px 25px 5px 45px;
+        margin: 5px 0 0 0;
+    }
+
+    #box04 #esq a#whats.tam16 {
+        font-size: 11px;
+    }
+
+    #box04 #esq a#whats:hover {
+        margin: 0px 0 0 0;
+    }
+
+    #box04 #dir {
+        display: none;
+        width: 80%;
+        vertical-align: top;
+        position: relative;
+    }
+
+    #box04 #dir img {
+        width: 90%;
+        height: auto;
+    }
+
+    #box04 #dir #slide {
+        display: inline-block;
+        width: 300px;
+        height: 530px;
+    }
+
+
+    #box05 {
+        position: relative;
+        width: 100%;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    #box05 #esq {
+        display: inline-block;
+        width: 100%;
+        vertical-align: top;
+        position: relative;
+    }
+
+    #box05 #esq #slide {
+        display: inline-block;
+        width: 320px;
+        height: 520px;
+    }
+
+    #box05 #esq #slide img {
+        width: 320px;
+        height: 480px;
+    }
+
+    #box05 #dir {
+        display: inline-block;
+        width: 100%;
+        vertical-align: top;
+        position: relative;
+    }
+
+    #box05 span {
+        display: inline-block;
+        text-align: left;
+        width: 80%;
+        vertical-align: top;
+    }
+
+    #box05 span.tam50 {
+        padding: 20px 0 0 0;
+    }
+
+    #box05 span.tam20 {
+        padding: 10px 0 0 0;
+        line-height: 200%;
+    }
+
+
+    #box06 {
+        position: relative;
+        width: 100%;
+        padding: 30px 0;
+        background: #1D1D1D;
+        text-align: center;
+    }
+
+    #box06 #alinhar {
+        position: relative;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #box06 ul {
+        display: relative;
+        padding: 60px 0;
+        margin: 0 auto;
+    }
+
+    #box06 ul li {
+        display: block;
+        float: left;
+        height: 300px;
+    }
+
+    #box06 ul li #tp {
+        display: inline-block;
+        width: 100%;
+        height: 90px;
+        padding: 0 0 20px 0;
+        text-align: left;
+    }
+
+    #box06 ul li #tp img {
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+        vertical-align: top;
+        margin: 0 10px 0 0;
+    }
+
+    #box06 ul li #tp div {
+        display: inline-block;
+        width: 60%;
+    }
+
+    #box06 ul li #tp div span {
+        display: inline-block;
+        vertical-align: top;
+        padding: 25px 0 0 0;
+    }
+
+    #box06 ul li #sb {
+        display: inline-block;
+        width: 100%;
+        text-align: left;
+        line-height: 160%;
+    }
+
+    #mapas {
+        display: inline-block;
+        position: relative;
+        width: 100%;
+        height: 400px;
+        vertical-align: top;
+        background: url('/public/img/layout/default/mpm.png') center center no-repeat;
+        background-size: cover;
+    }
+
+    #rodape {
+        position: relative;
+        width: 100%;
+        background: #1D1D1D;
+        text-align: center;
+    }
+
+    #rodape #rp {
+        display: inline-block;
+        width: 90%;
+        vertical-align: top;
+    }
+
+    #rodape #rp a#logo {
+        display: inline-block;
+        width: 200px;
+        height: 150px;
+        background: url('/public/img/layout/default/logo.png') center center no-repeat;
+        background-size: cover;
+        margin: 0 0 0 0;
+    }
+
+    #rodape #rp div {
+        display: inline-block;
+        padding: 30px 0;
+        width: 100%;
+        border-bottom: 1px solid #473920;
+    }
+
+    #rodape #rp div.rp {
+        padding: 30px 0 0 0;
+        border-bottom: none;
+    }
+
+    #rodape #rp div .tt {
+        display: inline-block;
+        width: 100%;
+        padding: 0 0 20px 0;
+    }
+
+    #rodape #rp div .tx {
+        display: inline-block;
+        width: 100%;
+        padding: 0 0 20px 0;
+    }
+
+    #rodape #rp div #insta {
+        display: inline-block;
+        width: auto;
+        padding: 10px 0 10px 50px;
+        background: url('/public/img/layout/default/icones/insta1.png') left center no-repeat;
+        background-size: 35px;
+    }
+
+    #rodape #rp div #whats {
+        display: inline-block;
+        width: auto;
+        padding: 10px 0 10px 50px;
+        background: url('/public/img/layout/default/icones/whats2.png') left center no-repeat;
+        background-size: 35px;
+    }
+
+    #rodape #rp div #mail {
+        display: inline-block;
+        padding: 10px 0;
+        ;
+    }
+
+}
+
+@media screen and (max-width: 414px) {}
