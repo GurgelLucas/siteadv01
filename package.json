@@ -1,0 +1,11 @@
+{
+  "name": "land",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:GurgelLucas/siteadv01.git",
+  "author": "GurgelLucas <lgurgel13@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
