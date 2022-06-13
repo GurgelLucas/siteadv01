@@ -6,7 +6,7 @@
   "author": "GurgelLucas <lgurgel13@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "node app.js"
+    "start": "node server.js"
   },
   "dependencies": {
     "express": "^4.18.1"
