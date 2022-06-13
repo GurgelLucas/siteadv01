@@ -5,6 +5,9 @@
   "repository": "git@github.com:GurgelLucas/siteadv01.git",
   "author": "GurgelLucas <lgurgel13@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "node app.js"
+  },
   "dependencies": {
     "express": "^4.18.1"
   }
