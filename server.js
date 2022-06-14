@@ -11,8 +11,8 @@ app.use('/js', express.static(__dirname + 'public/js'));
 app.use('/img', express.static(__dirname + 'public/img'));
 
 // Template Engine
-//app.set('views', './src/views');
-//app.set('view engine', 'ejs');
+app.set('views', './src/views');
+app.set('view engine', 'ejs');
 
 //app.use(bodyParser.urlenconded({ extended: true }))
 
