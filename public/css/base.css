@@ -221,7 +221,7 @@ h6 {
     width: 85px;
     height: 85px;
     border-radius: 9999px;
-    background: url(/public/img/layout/default/whatsfixed.png) center center no-repeat;
+    background: url('https://www.helanopontes.com.br/public/img/layout/default/whatsfixed.png') center center no-repeat;
     background-size: 70% 70%;
 }
 
@@ -264,7 +264,7 @@ h6 {
     position: relative;
     width: 100%;
     height: 650px;
-    background: url('/public/img/layout/default/topo.png') center center no-repeat;
+    background: url('../img/topo.png') center center no-repeat;
     background-size: cover;
     text-align: center;
 }
@@ -362,7 +362,7 @@ h6 {
     display: inline-block;
     width: 350px;
     height: 50px;
-    background: url('/public/img/background.png') left center no-repeat;
+    background: url('../img/zap.png') left center no-repeat;
     padding: 35px 0px 5px 50px;
     margin: 25px 0 0 0;
 }
@@ -416,7 +416,7 @@ h6 {
 
 #box02 #dir img {
     display: inline-block;
-    width: 360px;
+    width: 340px;
     height: 424px;
 }
 
@@ -438,7 +438,7 @@ h6 {
 #box03 a#insta {
     display: inline-block;
     width: 300px;
-    background: url('/public/img/layout/default/insta.png') left center no-repeat;
+    background: url('../img/insta.png') left center no-repeat;
     background-size: 50px;
     text-align: left;
     padding: 5px 0 5px 70px;
@@ -447,7 +447,7 @@ h6 {
 #box03 a#whats {
     display: inline-block;
     width: 300px;
-    background: url('/public/img/layout/default/whats.png') left center no-repeat;
+    background: url('../img/whats.png') left center no-repeat;
     background-size: 60px;
     text-align: left;
     padding: 5px 0 5px 70px;
@@ -495,7 +495,7 @@ h6 {
 }
 
 #box04 #esq ul li {
-    background: url('/public/img/layout/default/seta.png') left center no-repeat;
+    background: url('../img/seta.png') left center no-repeat;
     background-size: 15px;
     color: #FFF;
     text-align: left;
@@ -584,7 +584,7 @@ h6 {
     display: inline-block;
     width: 350px;
     height: 50px;
-    background: url('/public/img/layout/default/zap.png') left center no-repeat;
+    background: url('../img/zap.png') left center no-repeat;
     padding: 35px 0px 5px 50px;
     margin: 25px 0 0 0;
 }
@@ -777,7 +777,7 @@ h6 {
     display: inline-block;
     width: auto;
     padding: 10px 0 10px 50px;
-    background: url('/public/img/layout/default/icones/insta1.png') left center no-repeat;
+    background: url('../img/insta1.png') left center no-repeat;
     background-size: 35px;
 }
 
@@ -785,7 +785,7 @@ h6 {
     display: inline-block;
     width: auto;
     padding: 10px 0 10px 50px;
-    background: url('/public/img/layout/default/icones/whats2.png') left center no-repeat;
+    background: url('../img/whats2.png') left center no-repeat;
     background-size: 35px;
 }
 
@@ -795,15 +795,7 @@ h6 {
     ;
 }
 
-
-
-
-
-
-
-
 @media screen and (max-width: 1466px) {}
-
 
 @media screen and (max-width: 1224px) {}
 
@@ -877,7 +869,7 @@ h6 {
         width: 55px;
         height: 55px;
         border-radius: 9999px;
-        background: url(/public/img/layout/default/whatsfixed.png) center center no-repeat;
+        background: url('../img/whatsfixed.png') center center no-repeat;
         background-size: 70% 70%;
     }
 
@@ -919,7 +911,7 @@ h6 {
         position: relative;
         width: 100%;
         height: 400px;
-        background: url('/public/img/layout/default/topo.png') center center no-repeat;
+        background: url('../img/topo.png') center center no-repeat;
         background-size: cover;
         text-align: center;
     }
@@ -928,7 +920,7 @@ h6 {
         display: inline-block;
         width: 130px;
         height: 100px;
-        background: url('/public/img/layout/default/logo.png') center center no-repeat;
+        background: url('../img/logo.png') center center no-repeat;
         background-size: cover;
         margin: 30px 0 0 0;
     }
@@ -991,7 +983,7 @@ h6 {
         display: inline-block;
         width: 210px;
         height: 30px;
-        background: url('/public/img/layout/default/zap.png') left center no-repeat;
+        background: url('../img/zap.png') left center no-repeat;
         background-size: 270px;
         padding: 20px 25px 5px 45px;
         margin: 5px 0 0 0;
@@ -1055,7 +1047,7 @@ h6 {
 
     #box02 #dir img {
         display: inline-block;
-        width: 321px;
+        width: 240px;
         height: 304px;
     }
 
@@ -1077,7 +1069,7 @@ h6 {
     #box03 a#insta {
         display: inline-block;
         width: 250px;
-        background: url('/public/img/layout/default/insta.png') 20px center no-repeat;
+        background: url('../img/insta.png') 20px center no-repeat;
         background-size: 40px;
         text-align: left;
         padding: 5px 0 5px 80px;
@@ -1087,7 +1079,7 @@ h6 {
     #box03 a#whats {
         display: inline-block;
         width: 250px;
-        background: url('/public/img/layout/default/whats.png') 20px center no-repeat;
+        background: url('../img/whats.png') 20px center no-repeat;
         background-size: 45px;
         text-align: left;
         padding: 5px 0 5px 80px;
@@ -1171,7 +1163,7 @@ h6 {
     }
 
     #box04 #esq ul li {
-        background: url('/public/img/layout/default/seta.png') 5px center no-repeat;
+        background: url('../img/seta.png') 5px center no-repeat;
         background-size: 13px;
         color: #FFF;
         text-align: left;
@@ -1262,7 +1254,7 @@ h6 {
         display: inline-block;
         width: 210px;
         height: 30px;
-        background: url('/public/img/layout/default/zap.png') left center no-repeat;
+        background: url('../img/zap.png') left center no-repeat;
         background-size: 270px;
         padding: 20px 25px 5px 45px;
         margin: 5px 0 0 0;
@@ -1464,7 +1456,7 @@ h6 {
         display: inline-block;
         width: auto;
         padding: 10px 0 10px 50px;
-        background: url('/public/img/layout/default/icones/insta1.png') left center no-repeat;
+        background: url('../img/insta1.png') left center no-repeat;
         background-size: 35px;
     }
 
@@ -1472,7 +1464,7 @@ h6 {
         display: inline-block;
         width: auto;
         padding: 10px 0 10px 50px;
-        background: url('/public/img/layout/default/icones/whats2.png') left center no-repeat;
+        background: url('../img/whats2.png') left center no-repeat;
         background-size: 35px;
     }
 
