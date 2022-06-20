@@ -203,7 +203,6 @@ h6 {
     text-transform: uppercase;
 }
 
-
 .sonar-wrapper {
     position: fixed;
     right: 0px;
@@ -1048,8 +1047,8 @@ h6 {
 
     #box02 #dir img {
         display: inline-block;
-        width: 240px;
-        height: 304px;
+        width: 451px;
+        height: 424px;
     }
 
     #box03 {
@@ -1403,7 +1402,7 @@ h6 {
         width: 100%;
         height: 400px;
         vertical-align: top;
-        background: url('/public/img/layout/default/mpm.png') center center no-repeat;
+        background: url('../img/mp.png') center center no-repeat;
         background-size: cover;
     }
 
