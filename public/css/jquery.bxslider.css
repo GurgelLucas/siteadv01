@@ -286,7 +286,7 @@
 
     .bx-wrapper .bx-pager.bx-default-pager a:hover,
     .bx-wrapper .bx-pager.bx-default-pager a.active {
-        background: #F1AB2F;
+        background: red;
     }
 
     /* DIRECTION CONTROLS (NEXT / PREV) */
