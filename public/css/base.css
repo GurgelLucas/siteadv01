@@ -175,6 +175,10 @@ h6 {
     font-size: 16px;
 }
 
+.tam18 {
+    font-size: 18px;
+}
+
 .tam20 {
     font-size: 20px;
 }
@@ -650,6 +654,7 @@ h6 {
 }
 
 #box05 span {
+    margin-top: 10px;
     display: inline-block;
     text-align: left;
     width: 80%;
